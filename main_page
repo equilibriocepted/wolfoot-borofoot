@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BOROFOOT™ — Краят на гъбичките започва тук</title>
+  <meta name="description" content="BOROFOOT™ — натурален крем за свежест и поддръжка на стъпалата. Помощ, не просто продукт." />
+  <style>
+    :root{--green:#1f6f3b;--soft:#f6f7f4;--accent:#e6f1e8}
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:linear-gradient(180deg,var(--soft),#fff);color:#123;}
+    .container{max-width:980px;margin:28px auto;padding:20px}
+    header{display:flex;gap:20px;align-items:center}
+    .logo{display:flex;flex-direction:column;align-items:flex-start}
+    .brand{font-size:42px;color:var(--green);font-weight:800;letter-spacing:1px}
+    .tag{font-size:14px;color:#333;margin-top:6px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;margin-top:18px}
+    .hero-card{background:#fff;padding:22px;border-radius:12px;box-shadow:0 8px 24px rgba(18,24,36,0.06)}
+    .headline{font-size:28px;color:var(--green);margin:0 0 10px}
+    .sub{color:#334;opacity:.9;margin-bottom:12px}
+    .benefits{display:flex;gap:12px;flex-wrap:wrap}
+    .pill{background:var(--accent);padding:8px 12px;border-radius:999px;color:var(--green);font-weight:600;font-size:13px}
+    .product{background:linear-gradient(180deg,#fff,#fbfff9);padding:18px;border-radius:12px;text-align:center}
+    .jar{width:220px;height:220px;border-radius:12px;background-image:url('images/borofoot-jar.jpg');background-size:cover;background-position:center;margin:0 auto}
+    .price{font-size:22px;color:var(--green);font-weight:800;margin-top:12px}
+    .cta{margin-top:16px}
+    .btn{background:var(--green);color:#fff;padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+
+    section{margin-top:26px}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,18,28,0.05)}
+    h3{color:var(--green);margin-top:0}
+    ul{padding-left:18px}
+    .order-form label{display:block;margin-top:10px;font-size:14px}
+    .order-form input,.order-form textarea, .order-form select{width:100%;padding:10px;border-radius:8px;border:1px solid #e8e8e8;margin-top:6px}
+    .small{font-size:13px;color:#444;margin-top:8px}
+    footer{margin-top:36px;padding:18px 0;color:#666;font-size:13px;text-align:center}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.cols{grid-template-columns:1fr} .jar{width:180px;height:180px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="brand">BOROFOOT™</div>
+        <div class="tag">Натурален крем за свежест и поддръжка на стъпалата — помощ, не просто продукт</div>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div style="font-weight:700;color:#333">Цена: <span style="color:var(--green)">30 лв.</span></div>
+        <div class="small">Доставка до цяла България · Плащане — наложен платеж / банков превод / лично предаване за цяла София</div>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-card">
+        <h1 class="headline">Край на гъбичките — реална помощ за твоите крака</h1>
+        <p class="sub">BOROFOOT™ е крем за поддръжка на стъпалата, създаден с мисъл за удобство и естествено възстановяване. Подходящ за хора, които искат бърз комфорт и по-добра хигиена на кожата.</p>
+
+        <div class="benefits">
+          <span class="pill">Свеж аромат на бор</span>
+          <span class="pill">Лесно нанасяне</span>
+          <span class="pill">Аптечни компоненти</span>
+          <span class="pill">Подходящо ежедневно</span>
+        </div>
+
+        <section class="cols" style="margin-top:18px">
+          <div class="card">
+            <h3>Как действа</h3>
+            <p class="small">Нанася се тънък слой между пръстите и върху стъпалата. Оставя се да подейства; при регулярна употреба кожата се омекотява и започва естественото отделяне на мъртви клетки.</p>
+            <h3 style="margin-top:12px">Състав (основни)</h3>
+            <ul>
+              <li>Боров вазелин</li>
+            </ul>
+            <p class="small">*Продуктът се позиционира като козметика/хигиенен крем. Не даваме медицински прогнози или обещания за лечение. Консултирайте се с лекар при наличие на тежки състояния.</p>
+          </div>
+
+          <div class="product card" style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+            <div class="jar" role="img" aria-label="BOROFOOT jar"></div>
+            <div class="price">30 лв. / 20 гр.</div>
+            <div class="cta">
+              <button class="btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Поръчай сега</button>
+            </div>
+            <div class="small" style="margin-top:10px">Произведено от: [Кристиян Петров/фирма] ·
+              ✨ "Натурален и свеж аромат на бор — дъхът на природата!“ ✨</div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside style="position:relative">
+        <div style="background:linear-gradient(180deg,#fff,#f7fff6);padding:18px;border-radius:12px;box-shadow:0 8px 22px rgba(5,10,10,0.05)">
+          <h3 style="margin-top:0;color:var(--green)">Преди/След (примерни снимки)</h3>
+          <img src="images/before.jpg" alt="Before" style="width:100%;border-radius:10px;object-fit:cover">
+          <img src="images/after.jpg" alt="After" style="width:100%;border-radius:10px;object-fit:cover;margin-top:10px">
+
+          <div style="margin-top:12px">
+            <strong>Как да пробваш:</strong>
+            <p class="small">Нанеси тънък слой през нощта, остави да подейства. Повтори 1-2 пъти дневно според нуждата. Ако имаш силна реакция — преустанови употребата и се консултирай с лекар.</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="cols">
+      <div class="card">
+        <h3>Историята зад BOROFOOT™</h3>
+        <p class="small">Всичко започна с лична нужда и желание да помогна. Формулата е събрана от достъпни аптечни съставки и е разработена така, че да бъде лесна за приготвяне и употреба. Целта — реална помощ и справедливата цена за всеки.</p>
+        <h3 style="margin-top:12px">За кого е подходящ</h3>
+        <ul>
+          <li>Хора с суха и груба кожа на стъпалата</li>
+          <li>Хора, които искат ежедневна поддръжка</li>
+          <li>За всеки, който харесва натуралния аромат на бор</li>
+        </ul>
+      </div>
+
+      <div class="card" id="order">
+        <h3>Поръчка</h3>
+        <form class="order-form" onsubmit="event.preventDefault();alert('Поръчката е изпратена — ще се свържем скоро! (примерно действие)');">
+          <label>Име и Фамилия :
+            <input type="text" name="name" required placeholder="Иван Иванов">
+          </label>
+          <label>Телефонен номер :
+            <input type="tel" name="phone" required placeholder="0888 000 000">
+          </label>
+          <label>Адрес за доставка :
+            <textarea name="address" rows="3" required placeholder="Град, улица, №, ап. "></textarea>
+          </label>
+          <label>Количество :
+            <select name="qty"><option>1</option><option>2</option><option>3</option></select>
+          </label>
+          <div style="margin-top:10px">
+            <button class="btn" type="submit">Изпрати поръчка</button>
+          </div>
+          <div class="small">Доставка: 1-5 работни дни. Плащане: наложен платеж / банков превод.</div>
+        </form>
+
+        <h3 style="margin-top:14px">Отзиви</h3>
+        <div class="small">"Усещам разлика още след първото нанасяне — любим крем!" — Мария, София</div>
+        <div class="small" style="margin-top:6px">"Край на неприятната миризма, супер продукт." — Петър, Пловдив</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h3>Често задавани въпроси</h3>
+        <p><strong>В: Безопасно ли е?</strong><br><span class="small">A: Съставките са аптечни и често ползвани в козметиката. Ако имате алергия, направете тест върху малка зона.</span></p>
+        <p><strong>В: Мога ли да го продавам?</strong><br><span class="small">A: Да, продуктът е позициониран като козметика. За продажба в аптеки и за сертифициране проверете локалните изисквания и етикетиране.</span></p>
+      </div>
+    </section>
+
+    <footer>
+      BOROFOOT™ — Произведено от [Кристиян Петров/фирма] · Всички права запазени · За контакти: +359 877 741 531
+    </footer>
+  </div>
+</body>
+</html><form class="order-form" name="borofoot-order" method="POST" data-netlify="true">
+  <input type="text" name="name" placeholder="Иван Иванов" required>
+  <input type="tel" name="phone" placeholder="0888 000 000" required>
+  <textarea name="address" placeholder="Град, улица..." required></textarea>
+  <button type="submit">Изпрати поръчка</button>
+</form>
+
