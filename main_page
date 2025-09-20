@@ -1,3 +1,11 @@
+import os
+import zipfile
+
+# Създаваме временна структура за сайта
+site_dir = "/mnt/data/borofoot-site"
+images_dir = os.path.join(site_dir, "images")
+os.makedirs(images_dir, exist_ok=True)
+
 <!doctype html>
 <html lang="bg">
 <head>
